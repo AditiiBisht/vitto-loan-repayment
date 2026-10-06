@@ -1,0 +1,23 @@
+{
+  "name": "loan-repayment-service",
+  "version": "1.0.0",
+  "private": true,
+  "engines": { "node": ">=20.6" },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "db:setup": "node --env-file=.env.local db/migrate.js",
+    "db:seed": "node --env-file=.env.local db/seed.js",
+    "test": "node --env-file=.env.local ./node_modules/jest/bin/jest.js --runInBand"
+  },
+  "dependencies": {
+    "firebase": "^11.0.0",
+    "firebase-admin": "^12.7.0",
+    "next": "^15.0.0",
+    "pg": "^8.13.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": { "jest": "^29.7.0" }
+}
